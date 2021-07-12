@@ -1,0 +1,17 @@
+{
+  "name": "pm2-cronjob",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "pm2": "^5.1.0"
+  },
+  "scripts": {
+    "start": "pm2 startOrRestart process.yml",
+    "stop": "pm2 delete process.yml",
+    "logs": "pm2 logs"
+  }
+}

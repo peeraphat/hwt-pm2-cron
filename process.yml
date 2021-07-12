@@ -1,0 +1,7 @@
+apps:
+  - name: 'CRON'
+    exec_mode: 'fork'
+    script          : 'index.js'
+    cron_restart    : "*/5 * * * * *"
+    autorestart     : false
+    watch           : false
